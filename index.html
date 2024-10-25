@@ -1,314 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Can AI Keep Your Fields Organic?</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <header class="header-navbar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Can AI Keep Your Fields Organic?</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="header-navbar">
+    <div class="container">
+      <div class="nav-bar">
+        <div class="logo">
+          <img src="images/zakalogo.svg" alt="Website logo">
+        </div>
+        <div class="list">
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About Us</a>
+            </li>
+            <li>
+              <a href="">Programs</a>
+            </li>
+            <li>
+              <a href="">Blogs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="call-to-action">
+          <button href="" class="ctaBtn nav-btn">
+            Sign In
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
       <div class="container">
-        <div class="nav-bar">
-          <div class="logo">
-            <img src="images/zakalogo.svg" alt="Website logo">
+        <img src="./images/banner.webp" alt="Hero Image" class="hero-img">
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="blog-info">
+          <div class="blog-img">
+            <img src="./images/zakalogo2.png" alt="logo">
           </div>
-          <div class="list">
-            <ul>
-              <li>
-                <a href="">Home</a>
-              </li>
-              <li>
-                <a href="">About Us</a>
-              </li>
-              <li>
-                <a href="">Programs</a>
-              </li>
-              <li>
-                <a href="">Blogs</a>
-              </li>
-            </ul>
-          </div>
-          <div class="call-to-action">
-            <button href="" class="ctaBtn nav-btn">
-              Sign In
-            </button>
+          <div class="blog-author">
+            <h4 class="author">ZAKA AI</h4>
+            <p class="blog-date">October 19, 2024</p>
           </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <img src="./images/banner.webp" alt="Hero Image" class="hero-img">
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <div class="blog-info">
-            <div class="blog-img">
-              <img src="./images/zakalogo2.png" alt="logo">
-            </div>
-            <div class="blog-author">
-              <h4 class="author">ZAKA AI</h4>
-              <p class="blog-date">October 19, 2024</p>
-            </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <h1 class="content-title">
+          Can AI Keep Your Fields Organic?
+        </h1>
+        <article class="post">
+          <div class="post-section">
+            <p>
+              Chemical inputs in agriculture nullify the concept of organic food. Is artificial intelligence (AI) set to
+              replace chemistry? Can AI reduce the use of pesticides in agricultural fields?
+            </p>
+            <p>
+              Agricultural workers dislike weeds getting in the way of crops. To get rid of some of them, pesticides are
+              used extensively.
+              <strong> Minimising pesticides use can improve food safety by reducing the possibility of chemical
+                residues
+                on crops, resulting in safer produce for customers.</strong>
+              Here's where AI comes into play. In this blog, we will examine and answer the aforementioned questions,
+              and you will be introduced to:
+            </p>
+            <ol>
+              <li>
+                Different semantic segmentation models
+              </li>
+              <li>
+                Results of those models
+              </li>
+              <li>
+                Benefits of using one method versus another
+              </li>
+              <li>Recommended actions based on extracted insights</li>
+            </ol>
+            <p>
+              If you are interested in agriculture or artificial intelligence, you've chosen the ideal article. 😎
+            </p>
           </div>
-        </div>
-      </section>
-      <section class="content">
-        <div class="container">
-          <h1 class="content-title">
-            Can AI Keep Your Fields Organic?
-          </h1>
-          <article class="post">
-            <div class="post-section">
-              <p>
-                Chemical inputs in agriculture nullify the concept of organic food. Is artificial intelligence (AI) set to replace chemistry? Can AI reduce the use of herbicides in agricultural fields?
-              </p>
-              <p>
-                Agricultural workers dislike weeds getting in the way of crops. To get rid of some of them, herbicides are used extensively.
-                <strong> Minimising pesticide use can improve food safety by reducing the possibility of chemical residues on crops, resulting in safer produce for customers.</strong>
-                Here's where AI comes into play. In this blog, we will examine and answer the aforementioned questions, and you will be introduced to:
-              </p>
-              <ol>
-                <li>
-                  Different semantic segmentation models
-                </li>
-                <li>
-                  Results of those models
-                </li>
-                <li>
-                  Analysis of the results
-                </li>
-                <li>Insights about AI’s future in agricultural fields</li>
-              </ol>
-              <p>
-                If you are interested in agriculture or artificial intelligence, you've chosen the ideal article. 😎
-              </p>
-            </div>
-            <div class="post-section">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <h3 class="section-title">Problem Statement</h3>
-                      <p>
-                        As previously noted, eradicating weeds growing between crops is difficult, and excessive pesticide use has a negative impact on consumer health. Our solution avoids using herbicides. A business called Cyclair, uses AI to accomplish its purpose:
-                        <strong>Breach the weeding wall in vast crops.</strong>
-                        <br>
-                        <br>
-                        Cyclair is developing a
-                        <strong>robot</strong>
-                        that eliminates weeds. How will this robot operate? Cyclair will select an AI model that analyses images of crops and weeds to identify weeds. Following that, the robot removes the weeds without using herbicide. 🤯
-                      </p>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="post-img">
-                        <div>
-                          <img src="./images/robot.jpeg" alt="Cyclair Robot" class="content-img">
-                          <p class="source text-muted mt-2">https://cyclair.fr/articles/</p>
-                        </div>
+          <div class="post-section">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h3 class="section-title">Problem Statement</h3>
+                    <p>
+                      As previously noted, eradicating weeds growing between crops is difficult, and excessive
+                      pesticides
+                      use has a negative impact on consumer health. For less pesticides usage, a business called Cyclair
+                      uses AI to accomplish its purpose:
+                      <strong>Breach the weeding wall in vast crops.</strong>
+                      <br>
+                      <br>
+                      Cyclair is developing a
+                      <strong>robot</strong>
+                      that eliminates weeds. How will this robot operate? Cyclair will select an AI model that analyses
+                      images of crops and weeds to identify weeds. Following that, the robot removes the weeds without
+                      using herbicide. 🤯
+                      <br>
+                      <br>
+                      Semantic Segmentation is the best model for the problem at hand <strong>until now</strong>.
+                      Semantic segmentation
+                      has been used before, it has been tested, and it yields good results across various domains.
+                      Example: Self-driving cars that segment roads and objects on roads to prevent accidents and avoid
+                      collisions with other objects. Therefore, implementing a traditional semantic segmentation model
+                      for our problem will likely produce good results. <strong>If it is predicted to be effective, why
+                        discuss
+                        it further?</strong>
+                      <br>
+                      <br>
+                      Imagine training a model to distinguish a specific crop from a weed so that the weed can be
+                      removed. This would likely work well. But what if new types of weeds or crops emerge? Would the
+                      model recognize the new crop as a weed to be removed? Or might it mistake a new weed for a crop
+                      and leave it? To address this issue, we would need to retrain the model with these new crops and
+                      weeds. Solution found 🥳! But wait 🤔. With <strong>millions</strong> of new crops and weeds,
+                      retraining would be
+                      <strong>inefficient</strong> (limited adaptability for new classes),
+                      <strong>time-consuming</strong> (significant training time
+                      required), present <strong>scalability issues</strong> (difficulty handling large data
+                      expansions), and be
+                      <strong>computationally expensive</strong> (high resource demands for retraining).
+                      <br>
+                      <br>
+                      To expand this model’s capabilities without retraining from scratch, we find a potential solution:
+                      <strong>Continual Learning</strong>. This AI paradigm enables models to incrementally learn new
+                      tasks or classes.
+                      (Here, a task refers to each stage of training, where Task 1 is the initial model training, and
+                      Task 2, Task 3, etc., represent each new round of learning with additional classes.) In
+                      class-incremental learning, for example, a self-driving car initially segments common road objects
+                      (Task 1). Later, it could learn to recognize new objects, like scooters or delivery robots (Task
+                      2), <strong>without forgetting the previous ones</strong>.
+                    </p>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="post-img">
+                      <div>
+                        <img src="./images/robot.jpeg" alt="Cyclair Robot" class="content-img">
+                        <p class="source text-muted mt-2">https://cyclair.fr/articles/</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="post-section">
-              <h3 class="section-title">Trying a New Solution</h3>
-              <p>
-                Semantic segmentation is a deep learning algorithm that assigns a label or category to
-                <strong>every pixel in an image.</strong>
-                It is used to
-                <strong>identify groups of pixels that form distinct categories,</strong>
-                such as different types of crops and weeds in agricultural robotics. This strategy has been used with both traditional and Continual Learning (CL) Class-Incremental (CI) models. These existing solutions are often designed for specific datasets, algorithms, and training methods. As a result, while they can be used to test methods on new datasets or in different applications, their application is frequently limited to
-                <strong>semantic segmentation.</strong>
-              </p>
-              <div class="post-img">
-                <div>
-                  <img src="./images/maskImage.jpeg" alt="Robot" class="content-img mask-size">
-                  <p class="source text-muted mt-2">https://github.com/cropandweed/cropandweed-dataset</p>
-                </div>
+          </div>
+          <div class="post-section">
+            <h3 class="section-title">Trying The Potential Solution</h3>
+            <p>
+              Technically, semantic segmentation is a deep learning algorithm that assigns a label or category to
+              <strong>every pixel in an image.</strong>
+              It is used to
+              <strong>identify groups of pixels that form distinct categories,</strong>
+              such as different types of crops and weeds in agricultural robotics. This strategy has been used with
+              Continual Learning (CL) Class-Incremental (CI) models, but often designed for specific datasets,
+              algorithms, and training methods. Additionally, it is rarely used, lacks widespread implementation, and
+              remains relatively unpopular. As a result, while they can be used to
+              test methods on new datasets or in different applications, their application is frequently limited to
+              <strong>semantic segmentation.</strong>
+            </p>
+            <div class="post-img">
+              <div>
+                <img src="./images/maskImage.jpeg" alt="Robot" class="content-img mask-size">
+                <p class="source text-muted mt-2">https://github.com/cropandweed/cropandweed-dataset</p>
               </div>
-              <p>
-                Our method seeks for a broader use. It compares traditional and CL CI algorithms, providing insights that will benefit a
-                <strong>broader audience.</strong>
-                For example, Cyclair can find answers to questions such as:
-                <ul>
-                  <li>
-                    Which model demonstrates the best performance for distinguishing between background and crops?
-                  </li>
-                  <li>
-                    What are the main challenges observed when using traditional models for segmenting these classes?
-It also addresses questions of interest to researchers:
-                  </li>
-                  <li>
-                    How well do traditional models perform when segmenting different crop types?
-                  </li>
-                </ul>
-              </p>
-              <!-- <div class="post-img">
+            </div>
+            <p>
+              Our method seeks for a broader use. It compares some models and creates a proof of concept for CL CI,
+              providing insights that
+              will benefit a
+              <strong>broader audience.</strong>
+              For example, Cyclair can find answers to questions such as:
+            <ul>
+              <li>
+                Which model demonstrates the best performance for distinguishing between background and crops?
+              </li>
+              <li>
+                What are the benefits of using one method versus the other?
+              </li>
+              It also addresses questions of interest to researchers:
+              <li>
+                Is CL CI a promising AI paradigm?
+              </li>
+              <li>
+                How can I implement CL CI?
+              </li>
+            </ul>
+            </p>
+            <!-- <div class="post-img">
                 <div>
                   <img src="./images/contentImg.jpg" alt="Cyclair Robot" class="content-img">
                   <p class="source text-muted mt-2">Source: Image courtesy of Cyclair AI</p>
                 </div>
               </div> -->
-            </div>
-            <div class="post-section">
-              <h3 class="section-title">Our Approach: From A to Z</h3>
-              <p>
-                The
-                <a href="">CropAndWeed dataset</a>
-                was used, which is a large-scale dataset for Precision Agriculture, consisting of highly variable real-world images and multi-modal annotations for a rich set of crop and weed categories. We obtained the dataset from its
-                <a href="">GitHub repository.</a>
-                The real-world images of all crops and weeds are found under the images directory. The annotations (masks) are preserved in the labelIds directory, which consists of subdirectories, one for each crop. A subdirectory contains the masks corresponding to this crop. We opted to use the SugarBeet1 and Maize1 images, as well as their masks, in our study. Those crops were chosen because they have the most examples of any crop found in the dataset.
-                <a href="">Slide 4</a>
-                shows more information regarding how crops are separated, as well as the number of instances in this
-                <a href="">paper.</a>
-              </p>
-              <!-- <div class="post-img"> -->
-              <div class="d-flex justify-content-center">
-                <img src="./images/images-dir-tran.png" alt="Cyclair Robot" class="content-img">
-                <img src="./images/labelIds-dir-tran.png" alt="Cyclair Robot" class="content-img content-img-size">
-              </div>
-              <!-- </div> -->
-              <p>To collect images and masks for training, validating and testing, we created an algorithm that saves masks' labels in an array, copies and saves those masks into a new folder, searches for corresponding images under the images directory, and copies and saves those images back to the newly created folder. We now have images and masks for SugarBeet1 and Maize1 under one directory.</p>
-              <div class="post-img">
-                <div>
-                  <img src="./images/train-test-validate-img-tran.png" alt="Cyclair Robot" class="content-img">
-                </div>
-              </div>
-            </div>
+          </div>
+          <div class="post-section">
+            <h3 class="section-title">Our Approach: From A to Z</h3>
             <p>
-              <strong>Our goal</strong>
-              is to compare results from four different models:
+              The
+              <a href="">CropAndWeed dataset</a>
+              was used, which is a large-scale dataset for Precision Agriculture, consisting of highly variable
+              real-world images and multi-modal annotations for a rich set of crop and weed categories. We obtained the
+              dataset from its
+              <a href="">GitHub repository.</a>
+              The real-world images of all crops and weeds are found under the images directory. The annotations (masks)
+              are preserved in the labelIds directory, which consists of subdirectories, one for each crop. A
+              subdirectory contains the masks corresponding to this crop. We opted to use the SugarBeet1 and Maize1
+              images, as well as their masks, in our study. Those crops were chosen because they have the most examples
+              of any crop found in the dataset.
+              <a href="">Slide 4</a>
+              shows more information regarding how crops are separated, as well as the number of instances in this
+              <a href="">paper.</a>
             </p>
-            <ol>
-              <li>
-                Traditional approach identifies SugarBeet and background in an image.
-              </li>
-              <li>
-                Traditional approach identifies Maize and background in an image.
-              </li>
-              <li>
-                Traditional model identifies SugarBeet, Maize, and background in an image.
-              </li>
-              <li>
-                A Continuous Learning Class-Incremental model identifies SugarBeet and background as the first task and SugarBeet, Maize, and background as the second task in an image.
-              </li>
-            </ol>
-            <p>
-              We applied UNet for all four models, which each included four encoding and decoding layers. We also utilised NumPy, PyTorch, Matplotlib, Continuum, Avalanche, CV2, Torchvision, and Tensorboard libraries.
-              <br>
-              <br>
-              To set up our experiment, we split SugarBeet and Maize images and masks into train/test/validate groups. 80% for training, 5% for testing, and 15% for validation. We saved train, test, and validation images in separate subdirectories for SugarBeet and Maize. The same goes for their masks. This made it easy for us to train, test, and validate.
-            </p>
+            <!-- <div class="post-img"> -->
+            <div class="d-flex justify-content-center">
+              <img src="./images/images-dir-tran.png" alt="Cyclair Robot" class="content-img">
+              <img src="./images/labelIds-dir-tran.png" alt="Cyclair Robot" class="content-img content-img-size">
+            </div>
+            <!-- </div> -->
+            <p>To collect images and masks for training, validating and testing, we created an algorithm that saves
+              masks' labels in an array, copies and saves those masks into a new folder, searches for corresponding
+              images under the images directory, and copies and saves those images back to the newly created folder. We
+              now have images and masks for SugarBeet1 and Maize1 under one directory.</p>
             <div class="post-img">
               <div>
-                <img src="./images/algo-img-tran.png" alt="Cyclair Robot" class="content-img algo-img">
-                <!-- <p class="source text-muted mt-2">Source: Image courtesy of Cyclair AI</p> -->
+                <img src="./images/train-test-validate-img-tran.png" alt="Cyclair Robot" class="content-img">
               </div>
-            </div>
-            <p>
-              The hyperparameters were adjusted once. In the first stage, we utilised Adam as the optimizer with a learning rate of 0.001, and the results were fair. Later, we changed our optimizer to become AdamW and updated the hyperparameters with a learning rate of 0.0005 and weight decay of 1e-4. The improvement resulted in a greater confidence level for Maize1, which reached 95%; for SugarBeet1, we did not achieve a better outcome, but it was also fair. Taking into account our purpose, we want to
-              <strong>compare the results of various models rather than create a dependable model.</strong>
-              <br>
-              <br>
-              We evaluated our models using IoU and BCEWithLogitsLoss for single-class cases, and CrossEntropyLoss for multi-class cases. Additionally, we utilised DiceLoss.
-            </p>
-            <div class="post-section">
-              <h3 class="section-title">
-                Results and Findings
-              </h3>
-              <ol>
-                <li>
-                  Traditional approach identifies SugarBeet and background in an image:
-                  <ol type="a">
-                    <li>The IoU result for SugarBeet on epoch 1 was
-                      <strong>0.5458</strong>. The last epoch was
-                      <strong>0.5963</strong>
-                    </li>
-                    <li>The loss result for SugarBeet on epoch 1 was
-                      <strong>0.2134</strong>. The last epoch was
-                      <strong>0.08</strong>
-                    </li>
-                  </ol>
-                </li>
-                <br>
-                <li>
-                  Traditional approach identifies Maize and background in an image:
-                  <ol type="a">
-                    <li>The IoU result for Maize on epoch 1 was
-                      <strong>0.4309</strong>. The last epoch was
-                      <strong>0.5273</strong>
-                    </li>
-                    <li>The loss result for Maize on epoch 1 was
-                      <strong>0.2276</strong>. The last epoch was
-                      <strong>0.0496</strong>
-                    </li>
-                  </ol>
-                </li>
-                <br>
-                <li>
-                  Traditional model identifies SugarBeet, Maize, and background in an image:
-                  <ol type="a">
-                    <li>The IoU result for Maize on epoch 1 was
-                      <strong>0.0441</strong>. The last epoch was
-                      <strong>0.3732</strong>
-                    </li>
-                    <li>The IoU result for SugarBeet on epoch 1 was
-                      <strong>0.1483</strong>. The last epoch was
-                      <strong>0.3296</strong>
-                    </li>
-                    <li>The loss result for MaizeOrSugarBeet on epoch 1 was
-                      <strong>0.1832</strong>. The last epoch was
-                      <strong>0.0864</strong>
-                    </li>
-                  </ol>
-                </li>
-              </ol>
-              <div class="d-flex justify-content-center">
-                <img
-                  src="./images/TrainIouMaize.png"
-                  alt="Cyclair Robot"
-                  class="content-img me-2"
-                  style="width:500px ;"
-                >
-                <img
-                  src="./images/TrainLossMaize.png"
-                  alt="Cyclair Robot"
-                  class="content-img content-img-size"
-                  style="width:500px ;"
-                >
-              </div>
-              <p class="mt-5">The results show that the individual models for SugarBeet and Maize achieved
-                <strong>higher IoU and lower loss values compared to the multi-crop model.</strong>
-              </p>
-            </div>
-            <div class="post-section">
-              <h3 class="section-title">
-                Conculsion
-              </h3>
-              <p>
-                Can AI reduce the use of
-                <strong>herbicides in agricultural fields?</strong> The obvious decrease in loss is promising. Furthermore, the IoU values are somewhat good.
-                <strong>These models, if further optimised, could be used in weed-removal robots 🤖.</strong> We urge that companies such as
-                <strong>Cyclair</strong>
-                test those algorithms on their own datasets and consider training specialised models for individual crops to maximise segmentation performance.
-                <br>
-                <br>
-                This study took around
-                <strong>75 days</strong> to generate its findings. As previously stated, the purpose of this study was to
-                <strong>compare the findings of the aforementioned models rather than to produce a model with great accuracy.</strong> We aim to enhance the model's outcomes by performing more hyperparameter tests and adding training epochs, since the IoU graphs are still increasing and some of the models have not reached stability. We also intend to explore and experiment with
-                <strong>Continual Learning Class Incremental Libraries,</strong> as well as stay updated on this topic, due to its ability to adapt to new data on a frequent basis. Finally, we'd like to express our gratitude to the
-                <strong>Zaka and Cyclair teams</strong>
-                for their invaluable assistance.
-              </p>
             </div>
           </div>
-        </article>
+          <p>
+            To achieve <strong>our goal</strong>,
+            we implemented the following foue models:
+          </p>
+          <ol>
+            <li>
+              Traditional approach identifies SugarBeet and background in an image.
+            </li>
+            <li>
+              Traditional approach identifies Maize and background in an image.
+            </li>
+            <li>
+              Traditional model identifies SugarBeet, Maize, and background in an image.
+            </li>
+            <li>
+              A Continuous Learning Class-Incremental model identifies SugarBeet and background as the first task and
+              SugarBeet, Maize, and background as the second task in an image.
+            </li>
+          </ol>
+          <p>
+            We applied UNet for all four models, which each included four encoding and decoding layers. We also utilised
+            NumPy, PyTorch, Matplotlib, Continuum, Avalanche, CV2, Torchvision, and Tensorboard libraries.
+            <br>
+            <br>
+            To set up our experiment, we split SugarBeet and Maize images and masks into train/test/validate groups. 80%
+            for training, 5% for testing, and 15% for validation. We saved train, test, and validation images in
+            separate subdirectories for SugarBeet and Maize. The same goes for their masks. This made it easy for us to
+            train, test, and validate.
+          </p>
+          <div class="post-img">
+            <div>
+              <img src="./images/algo-img-tran.png" alt="Cyclair Robot" class="content-img algo-img">
+              <!-- <p class="source text-muted mt-2">Source: Image courtesy of Cyclair AI</p> -->
+            </div>
+          </div>
+          <p>
+            The hyperparameters were adjusted once. In the first stage, we utilised Adam as the optimizer with a
+            learning rate of 0.001, and the results were fair. Later, we changed our optimizer to become AdamW and
+            updated the hyperparameters with a learning rate of 0.0005 and weight decay of 1e-4. The improvement
+            resulted in a greater confidence level for Maize1, which reached 95%; for SugarBeet1, we did not achieve a
+            better outcome, but it was also fair. Taking into account our purpose, we want to
+            <strong>compare the results of various models rather than create a dependable model.</strong>
+            <br>
+            <br>
+            We evaluated our models using IoU and BCEWithLogitsLoss for single-class cases, and CrossEntropyLoss for
+            multi-class cases. Additionally, we utilised DiceLoss.
+          </p>
+          <div class="post-section">
+            <h3 class="section-title">
+              Results and Findings
+            </h3>
+            <ol>
+              <li>
+                Traditional approach identifies SugarBeet and background in an image:
+                <ol type="a">
+                  <li>The IoU result for SugarBeet on epoch 1 was
+                    <strong>0.5458</strong>. The last epoch was
+                    <strong>0.5963</strong>
+                  </li>
+                  <li>The loss result for SugarBeet on epoch 1 was
+                    <strong>0.2134</strong>. The last epoch was
+                    <strong>0.08</strong>
+                  </li>
+                </ol>
+              </li>
+              <br>
+              <li>
+                Traditional approach identifies Maize and background in an image:
+                <ol type="a">
+                  <li>The IoU result for Maize on epoch 1 was
+                    <strong>0.4309</strong>. The last epoch was
+                    <strong>0.5273</strong>
+                  </li>
+                  <li>The loss result for Maize on epoch 1 was
+                    <strong>0.2276</strong>. The last epoch was
+                    <strong>0.0496</strong>
+                  </li>
+                </ol>
+              </li>
+              <br>
+              <li>
+                Traditional model identifies SugarBeet, Maize, and background in an image:
+                <ol type="a">
+                  <li>The IoU result for Maize on epoch 1 was
+                    <strong>0.0441</strong>. The last epoch was
+                    <strong>0.3732</strong>
+                  </li>
+                  <li>The IoU result for SugarBeet on epoch 1 was
+                    <strong>0.1483</strong>. The last epoch was
+                    <strong>0.3296</strong>
+                  </li>
+                  <li>The loss result for MaizeOrSugarBeet on epoch 1 was
+                    <strong>0.1832</strong>. The last epoch was
+                    <strong>0.0864</strong>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+            <div class="d-flex justify-content-center">
+              <img src="./images/TrainIouMaize.png" alt="Cyclair Robot" class="content-img me-2" style="width:500px ;">
+              <img src="./images/TrainLossMaize.png" alt="Cyclair Robot" class="content-img content-img-size"
+                style="width:500px ;">
+            </div>
+            <p class="mt-5">The results show that the individual models for SugarBeet and Maize achieved
+              <strong>higher IoU and lower loss values compared to the multi-crop model.</strong>
+            </p>
+          </div>
+          <div class="post-section">
+            <h3 class="section-title">
+              Conculsion
+            </h3>
+            <p>
+              Can AI reduce the use of
+              <strong>pesticides in agricultural fields?</strong> The obvious decrease in loss is promising.
+              Furthermore, the IoU values are somewhat good.
+              <strong>These models, if further optimised, could be used in weed-removal robots 🤖.</strong> We urge that
+              companies such as
+              <strong>Cyclair</strong>
+              test those algorithms on their own datasets and consider training specialised models for individual crops
+              to maximise segmentation performance.
+              <br>
+              <br>
+              This study took around
+              <strong>75 days</strong> to generate its findings. As previously stated, the purpose of this study was to
+              <strong>compare the findings of the aforementioned models rather than to produce a model with great
+                accuracy.</strong> We aim to enhance the model's outcomes by performing more hyperparameter tests and
+              adding training epochs, since the IoU graphs are still increasing and some of the models have not reached
+              stability. We also intend to explore and experiment with
+              <strong>Continual Learning Class Incremental Libraries,</strong> as well as stay updated on this topic,
+              due to its ability to adapt to new data on a frequent basis. Finally, we'd like to express our gratitude
+              to the
+              <strong>Zaka and Cyclair teams</strong>
+              for their invaluable assistance.
+            </p>
+          </div>
+      </div>
+      </article>
       </div>
     </section>
     <section class="authors">
@@ -334,4 +406,5 @@ It also addresses questions of interest to researchers:
     </div>
   </footer>
 </body>
+
 </html>
