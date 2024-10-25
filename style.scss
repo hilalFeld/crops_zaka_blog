@@ -161,6 +161,11 @@ main {
         &.mask-size {
           max-width: 1000px;
         }
+
+        &.small-size {
+          max-width: 10px !important;
+          //width: 100px;
+        }
       }
 
       .source {

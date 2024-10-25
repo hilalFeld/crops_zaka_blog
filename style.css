@@ -131,6 +131,9 @@ main {
 .content .post .post-section img.mask-size {
   max-width: 1000px;
 }
+.content .post .post-section img.small-size {
+  max-width: 10px !important;
+}
 .content .post .post-section .source {
   text-align: center;
   max-width: 600px;

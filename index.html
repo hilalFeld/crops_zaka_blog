@@ -207,12 +207,15 @@
               For example, Cyclair can find answers to questions such as:
             <ul>
               <li>
-                Which model demonstrates the best performance for distinguishing between background and crops?
+                Is class-incremental continual learning applicable on our dataset and for our use case?
               </li>
               <li>
-                What are the benefits of using one method versus the other?
+                What are the different online resources of continual learning from libraries, frameworks to
+                implementations?
               </li>
-              It also addresses questions of interest to researchers:
+            </ul>
+            <p>It also addresses questions of interest to researchers:</p>
+            <ul>
               <li>
                 Is CL CI a promising AI paradigm?
               </li>
@@ -258,7 +261,7 @@
               now have images and masks for SugarBeet1 and Maize1 under one directory.</p>
             <div class="post-img">
               <div>
-                <img src="./images/train-test-validate-img-tran.png" alt="Cyclair Robot" class="content-img">
+                <img src="./images/algo-img-tran.png" alt="Cyclair Robot" class="content-img algo-img">
               </div>
             </div>
           </div>
@@ -291,9 +294,10 @@
             separate subdirectories for SugarBeet and Maize. The same goes for their masks. This made it easy for us to
             train, test, and validate.
           </p>
-          <div class="post-img">
+          <div class="post-img" style="margin: auto; text-align: center;">
             <div>
-              <img src="./images/algo-img-tran.png" alt="Cyclair Robot" class="content-img algo-img">
+              <img src="./images/train-test-validate-img-tran.png" alt="Cyclair Robot" class="content-img small-size"
+                style="max-width: 700px">
               <!-- <p class="source text-muted mt-2">Source: Image courtesy of Cyclair AI</p> -->
             </div>
           </div>
@@ -306,8 +310,35 @@
             <strong>compare the results of various models rather than create a dependable model.</strong>
             <br>
             <br>
-            We evaluated our models using IoU and BCEWithLogitsLoss for single-class cases, and CrossEntropyLoss for
-            multi-class cases. Additionally, we utilised DiceLoss.
+            For Continual Learning, we first evaluated the <strong>ContinualAI team's Avalanche library</strong>, which
+            did not enable semantic segmentation,
+            thus we had to switch to Continuum. We utilised the <strong>SegmentationClassIncremental</strong> class from
+            Continuum. This
+            class gives us an interface to manage our data for CL purposes. The scenario gives us a task set for each
+            task, which contains the right labels for training the model on. To provide our model the ability to learn
+            sequentially, we created buffer memory, which saved samples from past tasks and added them to the next task
+            set to be trained on. Continuum includes a <strong>rehearsal memory class</strong> that allows you to
+            specify the <strong>memory size</strong>
+            and <strong>herding method</strong> as parameters. We tested our training with the ICarL herding approach.
+            <br>
+            <br>
+            Despite the model, learning on SugarBeet for task 1 where the model displayed good IoU metric, after which,
+            it trained on Maize for task 2 also displaying good IoU score, however, upon testing and
+            evaluating the model, it turned out that it suffered from catastrophic forgetting 😵 resulting in the lack
+            of
+            distinguishing the SugarBeet class, which is the first class it learned, but being able to distinguish
+            Maize the second class.
+            <br>
+            <br>
+            If our Continual Learning model displayed fairly good results on both classes and it did not suffer from
+            catastrophic forgetting, we believe we could compare it with the traditional model. But as for right now,
+            the
+            model is not eligible for comparison and benchmarking.
+            <br>
+            <br>
+            We evaluated our models using <strong>Intersection over Union (IoU)</strong> per class, and used a
+            combination of
+            <strong>CrossEntropyLoss</strong> and <strong>DiceLoss</strong> as our loss function.
           </p>
           <div class="post-section">
             <h3 class="section-title">
@@ -365,36 +396,31 @@
               <img src="./images/TrainLossMaize.png" alt="Cyclair Robot" class="content-img content-img-size"
                 style="width:500px ;">
             </div>
-            <p class="mt-5">The results show that the individual models for SugarBeet and Maize achieved
+            <!-- <p class="mt-5">The results show that the individual models for SugarBeet and Maize achieved
               <strong>higher IoU and lower loss values compared to the multi-crop model.</strong>
-            </p>
+            </p> -->
           </div>
           <div class="post-section">
             <h3 class="section-title">
               Conculsion
             </h3>
             <p>
-              Can AI reduce the use of
-              <strong>pesticides in agricultural fields?</strong> The obvious decrease in loss is promising.
-              Furthermore, the IoU values are somewhat good.
-              <strong>These models, if further optimised, could be used in weed-removal robots 🤖.</strong> We urge that
-              companies such as
-              <strong>Cyclair</strong>
-              test those algorithms on their own datasets and consider training specialised models for individual crops
-              to maximise segmentation performance.
+              Despite the <strong>catastrophic forgetting</strong> that our model suffered from, we believe that we
+              paved the way for
+              future researchers to resume this work and try different approaches. They can try different herding
+              methods if they go with the rehearsal memory approach or can go towards Layer Freezing approaches or even
+              elastic weight consolidation.
               <br>
               <br>
               This study took around
-              <strong>75 days</strong> to generate its findings. As previously stated, the purpose of this study was to
-              <strong>compare the findings of the aforementioned models rather than to produce a model with great
-                accuracy.</strong> We aim to enhance the model's outcomes by performing more hyperparameter tests and
-              adding training epochs, since the IoU graphs are still increasing and some of the models have not reached
-              stability. We also intend to explore and experiment with
-              <strong>Continual Learning Class Incremental Libraries,</strong> as well as stay updated on this topic,
-              due to its ability to adapt to new data on a frequent basis. Finally, we'd like to express our gratitude
+              <strong>80 days</strong> to generate its findings. As previously stated, the purpose of this study was to
+              create a proof of concept
+              and to explore the Continual Learning community and implementations to assess what this topic still lacks
+              . We believe it’s a paradigm worth investing time and effort in as it is a pivotal paradigm that will
+              shift AI as we know. Finally, we'd like to express our gratitude
               to the
               <strong>Zaka and Cyclair teams</strong>
-              for their invaluable assistance.
+              for their invaluable assistance. 🚀
             </p>
           </div>
       </div>
